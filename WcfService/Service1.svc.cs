@@ -12,7 +12,6 @@ namespace WcfService
     // ПРИМЕЧАНИЕ. Чтобы запустить клиент проверки WCF для тестирования службы, выберите элементы Service1.svc или Service1.svc.cs в обозревателе решений и начните отладку.
     public class Calculator : ICalculatorSevice
     {
-
         public string showResult(double rz, double ur)
         {
             if (rz == 0 && ur == 0)
@@ -61,6 +60,8 @@ namespace WcfService
             double ur = ((ur_1 * rz_2) - (rz_1 * ur_2)) / (Math.Pow(rz_2, 2) + Math.Pow(ur_2, 2));
             return showResult(rz, ur);
         }
+
+        ///
 
         public string dodawanie2Param(ComplexType Zes_1, ComplexType Zes_2)
         {
